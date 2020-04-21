@@ -1,5 +1,5 @@
-\chapter{Introduction}\label{sec:1}
-\section{关于空格}\label{空格} % 这里出现 warning 是因为这个模板里没有中文的加粗字体，不用管
+\chapter{Introduction}\label{chap:1}
+\section{关于空格}\label{空格} 
 
 任意多个空格与一个空格的功能相同。
 
@@ -16,7 +16,7 @@
 幻影空格，命令\phantom{参数}生成和参数内容一样大小的空格，可以完成一些占位和对齐效果。
 
 \section{简单排版}
-使用 ref 命令来引用之前的 label，例如 Section~\ref{sec:1} shows how to use spaces.
+使用 ref 命令来引用之前的 label，例如 Section~\ref{chap:1} shows how to use spaces.
 Section 可以加 label，figure、subfigure、table 等等都可以加label。如果中英混排的话还是
 尽量建议中英文之间打个空格，避免排版的时候有些行 \LaTeX 不知道在哪换行就超宽了。
 
@@ -46,10 +46,17 @@ $a_1=b^2$
 % 而\符号是\textbackslash，~符号是\~{}，^符号是\^{}。
 "zheshisha"\cite{han2019three} oyes.
 
+'"
+
 在这个模板下使用的字体不区分英文的前后引号，想打引号直接输入俩""，中文则需要先后打出前后引号“”。例如~"Hello World!" 和 “哈喽！”
 
 还记得吗，汉字后面的空格会被忽略，所以这里的例如后面加了一个波浪号，否则就是例如 "Hello World!" 没有作用，但是前面的空格是有的，当然这个现象比较少见，一般没有英文标点紧跟着汉字出现的情况吧除了引号，所以要比较小心哦。
 
+hello-world
+
+1--10, $-10+10^2+-\times \div$
+
+pozhehao---fjkdslajk
 \section{Figure and table}
 
 \subsection{Figure}
@@ -70,7 +77,7 @@ subfigure 比较麻烦，实现方法可能会和具体的模板有关。
     ~
     \subfigure[awesome]{\label{fig2b}\includegraphics[width=0.31\textwidth]{Img/Chap1/fig1c}}
     ~
-    \subfigure[amazing!]{\label{fig2c}\includegraphics[width=0.31\textwidth]{Img/Chap1/fig1d}}
+    \subfigure[]{\label{fig2c}\includegraphics[width=0.31\textwidth]{Img/Chap1/fig1d}}
     \caption{bla bla. (a): wow, (b): awesome, (c):amazing.}
     \label{fig:bla bla}
 \end{figure}
@@ -154,7 +161,16 @@ bib 文件中千万不能有 citekey 相同的文献，会报错的，我就出�
 安装好后在 Zotero 中的编辑-首选项-Better BibTeX 中找到 Citation key format, 
 修改为 [auth][year][Title:split-ideographs:select=1,3]，这样软件生成的 citekey 就和
 谷歌学术中生成的是差不多的了\cite{WangBinHua2019KouYiLi,XuMing2016YiShiChang}，
-但是不一致哈哈哈！可以从那导出 bibtex 然后导入到 Zotero 库中，我们再 refresh 一下 citekey 就好了。
+但是不一致哈哈哈！可以从那导出 bibtex 然后导入到 Zotero 库中，我们再 refresh 一下 citekey 就好了。 Test glossary in this page: \gls{mm}, \gls{atf}.
+
+\section{Glossary}
+First use: \gls{acc}, second use: \gls{acc}.
+
+First use: \gls{lcmv}. After the first use, you can just type LCMV if you don't want to show the page numbers in the Glossary List.
+
+And other glossary: \gls{fft}, for the second use: \gls{fft}. \Gls{jpvm} you can get an upper-case full name if it's at the beginning of the sentence. \gls{fft}, \gls{mm}, and \gls{atf}.
+
+Massive testing: \Gls{sfr}, \gls{sfs}, \gls{ft}, \gls{pm}, \gls{pc}, \gls{ift}, \gls{isft}, \gls{ifft}, \gls{aed}, \gls{bc}, \gls{wfs}, \gls{hoa}.
 
 \clearpage % 可以强制分页
 

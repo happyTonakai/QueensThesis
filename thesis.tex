@@ -23,7 +23,7 @@
 % Setup YOUR thesis document in this file !
 % **************************************************
 \input{Tex/thesis-setup}
-
+\input{Tex/glossary}
 
 % **************************************************
 % Document CONTENT
@@ -63,6 +63,19 @@
 \tableofcontents				% display table of contents
 \cleardoublepage
 
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+
+% \lstlistoflistings
+% \cleardoublepage
+
+% \printnoidxglossary[sort=use,title={List of Abbreviations}]
+\printnoidxglossary[title={List of Abbreviations}]
+\cleardoublepage
+
 % --------------------------
 % Body matter
 % --------------------------
@@ -97,22 +110,15 @@
 }
 \cleardoublepage
 
-\listoffigures
-\cleardoublepage
-
-\listoftables
-\cleardoublepage
-
-\lstlistoflistings
-\cleardoublepage
+% original places for list of figures, tables and listings
 
 \appendix\cleardoublepage
 \input{Tex/chapter-appendix}       % INCLUDE: appendix
 
 \cleardoublepage
-\input{Tex/colophon}
+% \input{Tex/colophon}
 
-\cleardoublepage
+% \cleardoublepage
 \input{Tex/declaration}
 \clearpage
 

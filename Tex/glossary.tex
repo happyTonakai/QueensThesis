@@ -1,0 +1,48 @@
+
+\makenoidxglossaries
+\setacronymstyle{long-short}
+
+\newacronym{acc}{ACC}{acoustic contrast control}
+\newacronym{chdacc}{CHDACC}{circular harmonic domain acoustic contrast control}
+\newacronym{shdacc}{SHDACC}{spherical harmonic domain acoustic contrast control}
+\newacronym{pm}{PM}{pressure matching}
+\newacronym{mm}{MM}{mode matching}
+\newacronym{wmm}{WMM}{weighted mode matching}
+\newacronym{bc}{BC}{brightness control}
+\newacronym{aed}{AED}{acoustic energy difference}
+\newacronym{jpvm}{JPVM}{joint pressure and velocity matching}
+\newacronym{pc}{PC}{planarity control}
+\newacronym{wco}{WCO}{worst case optimization}
+\newacronym{ac}{AC}{acoustic contrast}
+\newacronym{ag}{AG}{array gain}
+\newacronym{dft}{DFT}{discrete Fourier transform}
+\newacronym{ft}{FT}{Fourier transform}
+\newacronym{ift}{IFT}{inverse Fourier transform}
+\newacronym{sft}{SFT}{spatial Fourier transform}
+\newacronym{isft}{ISFT}{inverse spatial Fourier transform}
+\newacronym{hels}{HELS}{Helmholtz equation least-squares}
+\newacronym{wfs}{WFS}{wave field synthesis}
+\newacronym{hoa}{HOA}{higher-order Ambisonics}
+\newacronym{sfr}{SFR}{sound field reproduction}
+\newacronym{sfs}{SFS}{sound field synthesis}
+\newacronym{atf}{ATF}{acoustic transfer function}
+\newacronym{lcmv}{LCMV}{linearly constrained minimum variance}
+\newacronym{fft}{FFT}{fast Fourier transform}
+\newacronym{ifft}{IFFT}{inverse fast Fourier transform}
+
+% \glsunsetall[main] % 如果你第一次引用缩写不想要全称，取消掉这一行的注释
+
+\newglossarystyle{mystyle}{%
+	\setglossarystyle{inline}%
+    \renewcommand*{\glossentry}[2]{%
+        \setlength{\baselineskip}{17pt} % 设置 Glossary 的行间距
+		\glsentryitem{##1}\noindent\makebox[0.15\textwidth][l]{\glstarget{##1}{\glossentryname{##1}}}%
+		\glossentrydesc{##1} \par
+	}%
+}
+\setglossarystyle{mystyle}
+
+% \setglossarystyle{long}
+% \renewenvironment{theglossary}%
+%  {\begin{longtable}[l]{lp{\glsdescwidth}}}%
+%  {\end{longtable}}
