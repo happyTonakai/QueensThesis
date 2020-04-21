@@ -83,9 +83,7 @@
 \setcounter{page}{1}			% set page counter
 \pagestyle{scrheadings}			% header and footer style
 
-%% Uncomment the following lines using the \part command
-%% to add part sections
-%\part{Example Part}
+%% 在撰写某一章节的时候，可以把其他章节的\input{}注释掉，这样只会生成对应章节的pdf，速度会快一些，不过如果有章节之间的交叉引用可能会显示??，正常现象！
 \input{Tex/Intro}
 \input{Tex/chapter-introduction}   % INCLUDE: introduction
 \input{Tex/chapter-related-work}   % INCLUDE: related work
