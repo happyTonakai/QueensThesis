@@ -149,13 +149,13 @@ bib 文件中的每一项长这样：
 %   publisher={Macmillan}
 % }
 
-book 是这个文献的类型，rayleigh1896theory 叫做 citekey，是你引用时的入口，从谷歌学术中导出的就是\cite{LiYaShu2017KeXueFan}
+book 是这个文献的类型，rayleigh1896theory 叫做 citekey，是你引用时的入口，从谷歌学术中导出的就是\cite[p.~14]{Officer1958Introductiontothe}\cite{Malmkjaer2017TheRoutledgeHandbook}
 作者+年份+title的第一个单词，后面的内容就不介绍了，就是这篇文献的基本信息啦。
-bib 文件中千万不能有 citekey 相同的文献，会报错的，我就出现过两次找了半天原来是这里出错了！
+bib 文件中千万不能有 citekey 相同的文献，会报错的，我就出现过两次找了半天原来是这里出错了！\cite[pp.~12--19]{Malmkjaer2017TheRoutledgeHandbook}
 
 想要引用的话直接用 \textbackslash cite 命令就可以了，输入完 cite 直接按 Tab
 键可以自动补全大括号（begin 等等后面带大括号的一般都可以），然后输入作者的名字+年份
-基本就可以筛选出来了，再次按下 Tab 键可以自动补全剩下的 citekey\cite{Malmkjaer2017TheRoutledgeHandbook,Officer1958Introductiontothe,TanXueLan2019DangDaiYi}。
+基本就可以筛选出来了，再次按下 Tab 键可以自动补全剩下的 citekey\cite{Malmkjaer2017TheRoutledgeHandbook,TanXueLan2019DangDaiYi}。
 
 最后差点忘了，刚才视频里忘记说了，你需要下载一个 Zotero 的插件叫做 Better BibTeX，
 安装好后在 Zotero 中的编辑-首选项-Better BibTeX 中找到 Citation key format, 
